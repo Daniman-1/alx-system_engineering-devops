@@ -39,11 +39,11 @@ defaults
   timeout server 15s
   timeout http-request 10s
 
-frontend th3gr00t-tech-frontend
+frontend daniethio-tech-frontend
     bind *:80
-    default_backend th3gr00t-tech-backend
+    default_backend daniethio-tech-backend
 
-backend th3gr00t-tech-backend
+backend daniethio-tech-backend
     balance roundrobin
     server 214057-web-01 54.234.97.36 check
     server 214057-web-02 52.91.125.4 check
